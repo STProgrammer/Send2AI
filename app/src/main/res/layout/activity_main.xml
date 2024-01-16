@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/textViewExplanation"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <!-- Explaining Text -->
+        <TextView
+            android:id="@+id/textViewExplanation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/explanation_text"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintVertical_weight="2"
+            app:layout_constraintTop_toBottomOf="@id/textViewTitle"
+            app:layout_constraintBottom_toTopOf="@id/editTextInput"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <!-- Textbox for Input -->
+        <EditText
+            android:id="@+id/editTextInput"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:hint="@string/paste_text_here"
+            android:inputType="textMultiLine"
+            android:layout_marginTop="12dp"
+            app:layout_constraintVertical_weight="10"
+            app:layout_constraintTop_toBottomOf="@id/textViewExplanation"
+            app:layout_constraintBottom_toTopOf="@id/textViewCopiedText"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <!-- TextView to Show Copied Text -->
+        <TextView
+            android:id="@+id/textViewCopiedText"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/copied_text_here"
+            android:layout_marginTop="12dp"
+            android:textSize="16sp"
+            app:layout_constraintVertical_weight="10"
+            app:layout_constraintTop_toBottomOf="@id/editTextInput"
+            app:layout_constraintBottom_toTopOf="@id/buttonSettings"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <!-- Button or Icon to Settings Activity -->
+        <Button
+            android:id="@+id/buttonSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/settings"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@id/textViewCopiedText"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

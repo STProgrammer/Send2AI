@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Send2AI</string>
+    <string name="str_explanation">Enter the template for the text you want to send to AI. Example: \'Explain {text} in simple terms.\'</string>
+    <string name="str_text_box">Enter template text</string>
+    <string name="str_save">Save</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+
+    <string name="template_saved_successfully">Template saved successfully.</string>
+    <string name="empty_input_so_the_default_is_just">Empty input, so the default is just \'%1$s\'.</string>
+    <string name="default_template">{text}</string>
+    <string name="paste_text_here">Paste or enter your text here</string>
+    <string name="copied_text_here">Copied text will appear here</string>
+    <string name="settings">Settings</string>
+    <string name="explanation_text">Paste text here; it auto-formats based on a template and copies to clipboard. Customize the template in Settings.</string>
+</resources>
