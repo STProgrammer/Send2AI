@@ -40,7 +40,7 @@
         <EditText
             android:id="@+id/editTextTemplate"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="match_parent"
             android:background="@drawable/edittext_background"
             android:hint="@string/str_text_box"
             android:imeOptions="flagNoFullscreen"
